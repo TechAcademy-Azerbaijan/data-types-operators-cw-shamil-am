@@ -3,9 +3,10 @@ prompt.start();
 
 prompt.get("input", function (err, result) {
   let numbers = result.input.split(",");
-  let money = parseInt(numbers[0]);
-  let cake = parseInt(numbers[1]);
+  let a = parseInt(result.input.split(",")[0]);
+  let n = parseInt(result.input.split(",")[1]);
+  //   let number1 = parseInt(n);
+  // addd
 
-  let res = money / cake;
-  console.log("Cavab: ", parseInt(res));
+  console.log(a ** n);
 });
