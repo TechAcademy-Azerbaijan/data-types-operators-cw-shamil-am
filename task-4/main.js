@@ -1,9 +1,11 @@
-const prompt = require('prompt');
+const prompt = require("prompt");
 prompt.start();
 
+prompt.get("input", function (err, result) {
+  let numbers = result.input.split(",");
+  let money = parseInt(numbers[0]);
+  let cake = parseInt(numbers[1]);
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
+  let res = money / cake;
+  console.log("Cavab: ", parseInt(res));
 });
