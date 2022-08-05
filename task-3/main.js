@@ -6,6 +6,7 @@ prompt.get("input", function (err, result) {
   let a = parseInt(result.input.split(",")[0]);
   let n = parseInt(result.input.split(",")[1]);
   //   let number1 = parseInt(n);
+  // addd
 
   console.log(a ** n);
 });
